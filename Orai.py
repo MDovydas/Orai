@@ -56,9 +56,9 @@ def weather(event):
     columns = ("temperature", "humidity", "wind_speed", "fix_time")
     tree = ttk.Treeview(new_tab[count], columns=columns, show="headings")
 
-    tree.heading("temperature", text="Temperatūra")
-    tree.heading("humidity", text="Dregmė")
-    tree.heading("wind_speed", text="Vėjo greitis")
+    tree.heading("temperature", text="Temperatūra °C")
+    tree.heading("humidity", text="Dregmė %")
+    tree.heading("wind_speed", text="Vėjo greitis m/s")
     tree.heading("fix_time", text="Data")
     tree.pack()
 
